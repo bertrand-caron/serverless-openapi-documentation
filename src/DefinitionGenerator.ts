@@ -140,6 +140,10 @@ export class DefinitionGenerator {
       operationObj.tags = documentationConfig.tags;
     }
 
+    if (documentationConfig.operationId) {
+      operationObj.operationId = documentationConfig.operationId;
+    }
+
     if (documentationConfig.deprecated) {
       operationObj.deprecated = true;
     }
